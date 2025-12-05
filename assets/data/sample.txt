@@ -1,0 +1,25 @@
+Welcome to the Offline LLM RAG Demo
+
+This is a sample text file that demonstrates the RAG (Retrieval-Augmented Generation) capabilities of this application.
+
+About React Native:
+React Native is a popular framework for building mobile applications using JavaScript and React. It allows developers to create native apps for iOS and Android using a single codebase. React Native uses native components instead of web components, providing better performance and a more native look and feel.
+
+About Large Language Models:
+Large Language Models (LLMs) are AI systems trained on vast amounts of text data. They can understand and generate human-like text, answer questions, write code, and perform various language tasks. Running LLMs on mobile devices requires optimized models and efficient inference engines.
+
+About RAG (Retrieval-Augmented Generation):
+RAG is a technique that enhances LLM responses by retrieving relevant information from a knowledge base before generating answers. This allows the model to provide more accurate and contextual responses based on specific documents or data sources.
+
+Technical Details:
+This app uses react-native-llama.cpp to run GGUF format models directly on mobile devices. The Phi-3 Mini model is a compact yet powerful LLM that can run efficiently on modern smartphones. The Q4_K_M quantization reduces model size while maintaining good performance.
+
+How It Works:
+1. Text documents are split into chunks
+2. Each chunk is converted into an embedding (vector representation)
+3. When you ask a question, it's also converted to an embedding
+4. The system finds the most similar chunk using cosine similarity
+5. That chunk is provided as context to the LLM
+6. The LLM generates a response based on the context and your question
+
+This enables the app to answer questions about specific documents even when completely offline.
